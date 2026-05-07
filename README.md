@@ -2,7 +2,7 @@
 
 > My first C library
 
-42 School project — reimplementation of standard C libc functions and additional useful functions for future projects.
+Reimplementation of standard C libc functions and additional useful functions for future projects.
 
 ---
 
