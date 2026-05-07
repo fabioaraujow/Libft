@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
-//#include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {
@@ -30,34 +28,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-/*
-int main(void)
-{
-	int		nbrs[10];
-	int		i;
-	char	str[20];
-
-	ft_memset(nbrs, 0, sizeof(nbrs));
-	ft_memset(str, '9', sizeof(str));
-	str[20] = '\0';
-	i = 0;
-	while (i < 10)
-	{
-		printf("%d", nbrs[i]);
-		if (i < 9)
-			printf(", ");
-		i++;
-	}
-	printf("\n");
-	i = 0;
-	while (str[i])
-	{
-		printf("%c", str[i]);
-		if (i < 19)
-			printf(", ");
-		i++;
-	}
-	printf("\n");
-	return (0);
-}
-*/

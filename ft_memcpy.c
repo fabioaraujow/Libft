@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
-//#include <string.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -30,39 +28,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-int main(void)
-{
-	size_t	i;
-	int		nbrs[5];
-	int		nbrscpy[5];
-	char	str[10];
-	char	strcpy[10];
-
-	memset(nbrs, 0, sizeof(nbrs));
-	memset(nbrscpy, 0, sizeof(nbrscpy));
-	memset(str, 65, sizeof(str));
-	memset(strcpy, 0, sizeof(strcpy));
-	ft_memcpy(nbrscpy, nbrs, (2 * sizeof(int)));
-	ft_memcpy(strcpy, str, (3 * sizeof(char)));
-	i = 0;
-	while (i < 2)
-	{
-		printf("%d", nbrscpy[i]);
-		if (i < 1)
-			printf(", ");
-		i++;
-	}
-	printf("\n");
-	i = 0;
-	while (strcpy[i])
-	{
-		printf("%c", strcpy[i]);
-		if (i < 2)
-			printf(", ");
-		i++;
-	}
-	printf("\n");
-	return (0);
-}
-*/

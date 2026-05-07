@@ -11,8 +11,6 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
-//#include <string.h>
 
 static void	ft_rvcpy(unsigned char *dest, unsigned char *src, size_t n)
 {
@@ -56,29 +54,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-int	main(void)
-{
-	char	str[6] = "Fabio";
-	char	str_b[6] = "Fabio";
-	int		i = 0;
-
-	printf("Before ft_memmove:\n");
-	while (str[i])
-		printf("%c", str[i++]);
-	printf("\n");
-	ft_memmove(str + 2, str, (3 * sizeof(char)));
-	i = 0;
-	printf("After ft_memmove with dest > src:\n");
-	while (str[i])
-		printf("%c", str[i++]);
-	printf("\n");
-	printf("After ft_memmove with dest < src:\n");
-	ft_memmove(str_b, str_b + 2, (3 * sizeof(char)));
-	i = 0;
-	while (str_b[i])
-		printf("%c", str_b[i++]);
-	printf("\n");
-	return (0);
-}
-*/

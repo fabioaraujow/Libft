@@ -21,24 +21,3 @@ size_t	ft_strlen(const char *str)
 		len++;
 	return (len);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(int ac, char **av)
-{
-	size_t	size;
-
-	if (ac == 2)
-	{
-		size = ft_strlen(av[1]);
-		if (strlen(av[1]) == size)
-		{
-			printf("return from std function: %zu\n", strlen(av[1]));
-			printf("return from my function: %zu\n", ft_strlen(av[1]));
-			printf("the function is running like the original.\n");
-		}
-		printf("The size of string is %zu\n", size);
-	}
-	return (0);
-}
-*/
