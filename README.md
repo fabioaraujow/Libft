@@ -1,4 +1,4 @@
-# 🔧 Libft
+# Libft
 
 > My first C library
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 📖 About
+## About
 
 **libft** is a static library containing 43 functions implemented from scratch, divided into three parts:
 
@@ -16,7 +16,7 @@
 
 ---
 
-## 🗂️ Implemented Functions
+## Implemented Functions
 
 ### Part 1 - Libc (23 functions)
 
@@ -46,7 +46,7 @@
 
 ---
 
-## 🚀 Compilation
+## Compilation
 
 ```bash
 make        # Compiles the libft.a library
@@ -57,7 +57,7 @@ make re     # Recompiles everything from scratch
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### 1. Include the header in your code
 
@@ -88,15 +88,17 @@ int main(void)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
+```
 Libft/
 ├── libft.h          # Header with prototypes
 ├── Makefile         # Compilation automation
 ├── ft_*.c           # Function files
 └── README.md        # This file
+```
 
-## 👤 Author
+## Author
 
 **Fábio Araújo** - [@fabde-ar]
 
