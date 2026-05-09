@@ -49,6 +49,7 @@ SRCS = ft_atoi.c\
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
+bonus: all
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)

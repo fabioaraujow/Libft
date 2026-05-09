@@ -18,7 +18,9 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	size_t	i;
 
 	i = 0;
-	str_result = calloc((ft_strlen(s) + 1), sizeof(char));
+	if (!s)
+		return (NULL);
+	str_result = ft_calloc((ft_strlen(s) + 1), sizeof(char));
 	if (!str_result)
 		return (NULL);
 	while (s[i])

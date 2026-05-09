@@ -19,17 +19,19 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	i;
 	size_t	j;
 
-	s1_len = (ft_strlen(s1) - 1);
+	if (!s1)
+		return (NULL);
+	s1_len = (ft_strlen(s1));
 	i = 0;
-	j = 0;
 	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
-	while (s1_len > i && ft_strchr(set, s1[s1_len]))
+	while (s1_len > i && ft_strchr(set, s1[s1_len - 1]))
 		s1_len--;
-	trim = calloc(((s1_len - i) + 2), sizeof(char));
+	trim = ft_calloc(((s1_len - i) + 1), sizeof(char));
 	if (!trim)
 		return (NULL);
-	while (i <= s1_len)
+	j = 0;
+	while (i < s1_len)
 	{
 		trim[j++] = s1[i++];
 	}
