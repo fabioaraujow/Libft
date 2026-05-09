@@ -65,7 +65,7 @@ static char	**ft_spcpy(const char *src, char **dest, char c, size_t start)
 			start++;
 			j++;
 		}
-		while (src[start] == c)
+		while (src[start] && src[start] == c)
 			start++;
 		i++;
 	}
@@ -77,11 +77,13 @@ char	**ft_split(const char *s, char c)
 	char	**splited;
 	size_t	start;
 
+	if (!s)
+		return (NULL);
 	splited = ft_calloc((ft_count_words(s, c) + 1), sizeof(char *));
 	if (!splited)
 		return (NULL);
 	start = 0;
-	while (s[start] == c)
+	while (s[start] && s[start] == c)
 		start++;
 	if (!ft_spcpy(s, splited, c, start))
 	{
