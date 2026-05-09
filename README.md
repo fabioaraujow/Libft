@@ -1,12 +1,14 @@
+*This project has been created as part of the 42 curriculum by fabde-ar.*
+
 # Libft
 
 > My first C library
 
-Reimplementation of standard C libc functions and additional useful functions for future projects.
+**libft** is the first project of the 42 School curriculum. The goal is to create a static C library containing reimplementations of standard libc functions and additional utility functions that will be reused in future projects.
 
 ---
 
-## About
+## Description
 
 **libft** is a static library containing 43 functions implemented from scratch, divided into three parts:
 
@@ -46,7 +48,9 @@ Reimplementation of standard C libc functions and additional useful functions fo
 
 ---
 
-## Compilation
+## Instructions
+
+### Compilation
 
 ```bash
 make        # Compiles the libft.a library
@@ -55,23 +59,21 @@ make fclean # Removes objects and library
 make re     # Recompiles everything from scratch
 ```
 
----
+### Usage
 
-## Usage
-
-### 1. Include the header in your code
+1. Include the header in your code
 
 ```c
 #include "libft.h"
 ```
 
-### 2. Compile with the library
+2. Compile with the library
 
 ```bash
 cc main.c libft.a -o program
 ```
 
-### 3. Usage example
+3. Usage example
 
 ```c
 #include "libft.h"
@@ -88,6 +90,26 @@ int main(void)
 
 ---
 
+## Resources
+
+### References used
+
+- [42 School Subject - Libft] - 42 School Libft project subject (PDF provided by 42)
+- [The C Programming Language](https://en.wikipedia.org/wiki/The_C_Programming_Language) - Brian Kernighan & Dennis Ritchie
+- Linux man pages: `man 3 strlen`, `man 3 memcpy`, `man 3 strdup`, etc.
+- [Norminette](https://github.com/42School/norminette) - Official 42 code style checker
+
+### AI Usage
+
+AI tools were used during the development of this project for:
+
+- **Concept clarification:** Understanding pointer mechanics, function pointers, and linked list structures.
+- **Code review:** Identifying logical errors, edge cases, and norm violations.
+
+All actual code implementations were written and understood by the author. AI was used as a learning aid, not as a code generator.
+
+---
+
 ## Project Structure
 
 ```
@@ -98,8 +120,10 @@ Libft/
 └── README.md        # This file
 ```
 
+---
+
 ## Author
 
-**Fábio Araújo** - [@fabde-ar]
+**Fábio Araújo** - [@fabioaraujow](https://github.com/fabioaraujow)
 
-Developed as part of **42 School** curriculum
+42 School student
