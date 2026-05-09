@@ -21,6 +21,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	size_s = ft_strlen(s);
 	if (start > size_s)
 		return (ft_calloc(1, sizeof(char)));
+	if (len > size_s - start)
+		len = size_s - start;
 	substr = ft_calloc(len + 1, sizeof(char));
 	i = 0;
 	if (!substr)
