@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	while (*s)
 		write(fd, s++, sizeof(char));
 	write(fd, "\n", sizeof(char));

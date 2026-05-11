@@ -19,7 +19,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	size_t	i;
 	size_t	j;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
 	s1_len = (ft_strlen(s1));
 	i = 0;

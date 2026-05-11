@@ -18,6 +18,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	size_t	size_s;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	size_s = ft_strlen(s);
 	if (start > size_s)
 		return (ft_calloc(1, sizeof(char)));
